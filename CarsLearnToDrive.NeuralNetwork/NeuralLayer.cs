@@ -12,7 +12,7 @@ namespace CarsLearnToDrive.NeuralNetwork
 
         private double[][] _weights;
         private double[] _biases;
-        public NeuralLayer(int ammountOfNeurons, Random random)
+        public NeuralLayer(uint ammountOfNeurons, Random random)
         {
             if (ammountOfNeurons <= 0)
                 throw new ArgumentException("You cannot create a Neural Layer with no input neurons.", "InputCount");
